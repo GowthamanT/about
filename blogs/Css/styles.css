@@ -1,0 +1,183 @@
+/* Reset Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-70 {
+    margin-top: 70px;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+
+.top-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+}
+
+.logo {
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: -1px;
+    height: 100%;
+    font-style: italic;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icons {
+    float: right;
+}
+
+.social-media-icon {
+    display: inline-block;
+}
+.social-media-icon img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Cover */
+
+.cover-img {
+    background: url("../assets/images/coverbg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.content {
+    margin-top: -80px;
+}
+
+@media screen and (max-width: 650px) {
+    .cover-img {
+        height: 40vh;
+    }
+}
+
+.article-header {
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: initial;
+}
+
+.article-content {
+    background-color: white;
+}
+
+.creation-info {
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .start-paragraph {
+        text-indent: 50px;
+    }
+}
+
+.start-paragraph::first-letter {
+    font-size: 28px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+    background-color: black;
+}
+
+.copyright {
+    font-size: 16px;
+    text-align: center;
+    color: grey;
+}
