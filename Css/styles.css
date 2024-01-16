@@ -226,7 +226,7 @@ footer {
 }
 
 /* Show the element only on laptop screen sizes */
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 768px) {
     #consistency-graph {
         display: flex;
         align-items: center;
