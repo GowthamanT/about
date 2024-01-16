@@ -6,14 +6,10 @@ copyrightYearElement.textContent = currentYear;
 // Consistency graph
 
 function buildConsistencyGraph() {
-    console.log('Loading...');
-
     /**
      * TODO: We need to change this to get data from the API and load the table cells.
      */
     loadJSON(function (data) {
-        console.log('Data - ', data);
-
         renderTableCells(data);
     });
 }
