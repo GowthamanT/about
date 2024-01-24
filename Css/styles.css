@@ -60,7 +60,7 @@ h2 {
     margin-top: 30px;
 }
 .mt-40 {
-    margin-top: 40px;
+    margin-top: 40px !important;
 }
 .mt-50 {
     margin-top: 50px;
@@ -226,21 +226,28 @@ footer {
 
 #consistency-graph {
     margin-top: 30px;
-    margin-bottom: 100px;
+    display: flex;
+    overflow: auto;
+}
 
-    /* 
-        TODO: Remove this Css once we add responsiveness for consistency graph
-        and add the content in the media query to here.
-    */
+/* Uncomment this if you want to hide the scroll bar for the consistency graph. */
+/* #consistency-graph::-webkit-scrollbar {
     display: none;
+} */
+
+.consistency-journey-container {
+    margin-top: 50px;
 }
 
 /* Show the element only on laptop screen sizes */
 @media (min-width: 768px) {
     #consistency-graph {
-        display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+    }
+
+    .consistency-journey-container {
+        margin-bottom: 100px;
     }
 }
 
@@ -321,6 +328,10 @@ th {
     .image {
         width: 100%;
     }
+
+    .graph-table-cell {
+        padding: 0 2px;
+    }
 }
 
 .image-text {
@@ -329,13 +340,7 @@ th {
     margin-top: 5px;
 }
 
-.alt-text {
-    text-decoration: underline;
-}
-
-/* Laptop screen sizes */
-@media (min-width: 768px) {
-    .alt-text {
-        display: none;
-    }
+.support-text {
+    padding-top: 5px;
+    text-align: center;
 }
