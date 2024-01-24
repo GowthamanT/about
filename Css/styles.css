@@ -230,10 +230,9 @@ footer {
     overflow: auto;
 }
 
-/* Uncomment this if you want to hide the scroll bar for the consistency graph. */
-/* #consistency-graph::-webkit-scrollbar {
+#consistency-graph::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .consistency-journey-container {
     margin-top: 50px;
