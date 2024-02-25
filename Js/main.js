@@ -1,10 +1,25 @@
-// Copyright
-const copyrightYearElement = document.getElementById('copyrightYear');
-const currentYear = new Date().getFullYear();
-copyrightYearElement.textContent = currentYear;
+main();
 
-// Consistency graph
+/**
+ * A main function that lists all the necessary functions that needs to run when loading the page.
+ */
+function main() {
+    setCurrentYearInCopyrightElm();
+    buildConsistencyGraph();
+}
 
+/**
+ * Sets the current year in the copyright element in the HTML.
+ */
+function setCurrentYearInCopyrightElm() {
+    const copyrightYearElement = document.getElementById('copyrightYear');
+    const currentYear = new Date().getFullYear();
+    copyrightYearElement.textContent = currentYear;
+}
+
+/**
+ * A function that builds the consistency graph in the HTML.
+ */
 function buildConsistencyGraph() {
     /**
      * TODO: We need to change this to get data from the API and load the table cells.
@@ -31,6 +46,34 @@ function loadJSON(callback) {
     };
 
     xhr.send(null);
+}
+
+/**
+ * Render the data into the table cell.
+ *
+ * @param data - The habit tracker data.
+ */
+function renderTableCells(data) {
+    data.forEach((item) => {
+        const weekday = getWeekday(item.date);
+        const row = document.getElementById(weekday);
+
+        const titleText = `Completed ${item.completedTasks}/${
+            item.outOff
+        } tasks on ${formatDisplayDate(item.displayData)}.`;
+
+        const tableCell = document.createElement('td');
+        tableCell.title = titleText;
+        tableCell.classList.add('graph-table-cell');
+
+        const graphCell = document.createElement('span');
+        graphCell.classList.add('graph-cell');
+        graphCell.classList.add(`level-${item.completedTasks}`);
+
+        tableCell.appendChild(graphCell);
+
+        row.appendChild(tableCell);
+    });
 }
 
 /**
@@ -84,33 +127,3 @@ function formatDisplayDate(dateString) {
 
     return `${displayDate}${suffix}`;
 }
-
-/**
- * Render the data into the table cell.
- *
- * @param data - The habit tracker data.
- */
-function renderTableCells(data) {
-    data.forEach((item) => {
-        const weekday = getWeekday(item.date);
-        const row = document.getElementById(weekday);
-
-        const titleText = `Completed ${item.completedTasks}/${
-            item.outOff
-        } tasks on ${formatDisplayDate(item.displayData)}.`;
-
-        const tableCell = document.createElement('td');
-        tableCell.title = titleText;
-        tableCell.classList.add('graph-table-cell');
-
-        const graphCell = document.createElement('span');
-        graphCell.classList.add('graph-cell');
-        graphCell.classList.add(`level-${item.completedTasks}`);
-
-        tableCell.appendChild(graphCell);
-
-        row.appendChild(tableCell);
-    });
-}
-
-buildConsistencyGraph();
