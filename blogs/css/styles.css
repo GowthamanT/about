@@ -1,0 +1,66 @@
+@import url(/css/main.css);
+
+.cover-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+@media (max-width: 767.98px) {
+    .cover-img {
+        height: 30vh;
+    }
+}
+
+.blog-1 {
+    background-image: url('../assets/journey-towards-consistency/cover-background-image.jpg');
+}
+
+.content {
+    margin-top: -80px;
+}
+
+.article-header {
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title {
+    font-size: 40px;
+    padding-top: 50px;
+    text-align: center;
+    line-height: initial;
+}
+
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+}
+
+.article-content {
+    background-color: white;
+}
+
+.creation-info {
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.start-paragraph {
+    line-height: 25px;
+}
+
+@media (min-width: 768px) {
+    .start-paragraph {
+        text-indent: 50px;
+    }
+}
+
+.start-paragraph::first-letter {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
