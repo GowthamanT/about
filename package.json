@@ -1,0 +1,16 @@
+{
+    "name": "gowthamant-portfolio",
+    "version": "1.0.0",
+    "description": "Know about Gowthaman Thirunavukkarasu.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GowthamanT/gowthamant.in.git"
+    },
+    "author": "Gowthaman Thirunavukkarasu <happygowthaman@gmail.com> (https://gowthamant.in/)",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/GowthamanT/gowthamant.in/issues"
+    },
+    "homepage": "https://github.com/GowthamanT/gowthamant.in#readme",
+    "private": true
+}
