@@ -22,30 +22,16 @@ function setCurrentYearInCopyrightElm() {
  */
 function buildConsistencyGraph() {
     /**
-     * TODO: We need to change this to get data from the API and load the table cells.
+     * TODO: Need to change this to get data from the API and load the table cells.
      */
-    loadJSON(function (data) {
-        renderTableCells(data);
-    });
-}
-
-/**
- * Loads the data from the JSON file.
- *
- * @param callback - A callback function.
- */
-function loadJSON(callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.overrideMimeType('application/json');
-
-    xhr.open('GET', 'assets/habit-tracker-data.json', true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            callback(JSON.parse(xhr.responseText));
-        }
-    };
-
-    xhr.send(null);
+    fetch('assets/habit-tracker-data.json')
+        .then((response) => response.json())
+        .then((data) => {
+            renderTableCells(data);
+        })
+        .catch((error) =>
+            console.error('Error in building consistency graph.\n\n', error)
+        );
 }
 
 /**
