@@ -1,25 +1,20 @@
 @import url(main.css);
 
 .photo-container {
-    padding-top: 160px;
     display: flex;
-    justify-content: center;
+    position: relative;
+    top: -40px;
+    justify-content: space-between;
     align-items: center;
 }
 
 .photo {
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-}
-
-@media (max-width: 767.98px) {
-    .photo {
-        height: 200px;
-        width: 200px;
-    }
+    border: 4px solid white;
 }
 
 .quote-text {
@@ -30,25 +25,16 @@
     color: #d2042d;
 }
 
-.content {
-    margin-top: -80px;
-}
-
 .hero-section {
     background-color: white;
     border-radius: 5px 5px 0px 0px;
 }
 
 .title {
-    font-size: 40px;
-    text-align: center;
+    font-size: 20px;
     line-height: initial;
-}
-
-@media (max-width: 767.98px) {
-    .title {
-        font-size: 30px;
-    }
+    position: relative;
+    top: -30px;
 }
 
 .sub-title {
@@ -57,20 +43,7 @@
 }
 
 .start-paragraph {
-    padding-top: 35px;
     line-height: 25px;
-}
-
-@media (min-width: 1024px) {
-    .start-paragraph {
-        padding-top: 61px;
-    }
-}
-
-@media (min-width: 768px) {
-    .start-paragraph {
-        text-indent: 50px;
-    }
 }
 
 .start-paragraph::first-letter {
@@ -87,16 +60,30 @@
 .image {
     width: 100%;
     border-radius: 5px;
-    width: 50%;
-}
-
-@media (max-width: 768px) {
-    .image {
-        width: 100%; /* To make the image to take full width in small screens. */
-    }
+    height: 300px;
 }
 
 .image-text {
     font-size: 14px;
     color: grey;
+}
+
+.header-image {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+
+.main-container {
+    position: relative;
+    margin-top: -15px;
+}
+
+.socials {
+    position: relative;
+    top: 10px;
 }
