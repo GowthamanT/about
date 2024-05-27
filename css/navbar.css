@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+}
+
+.logo {
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: -1px;
+    height: 100%;
+    font-style: italic;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icons {
+    float: right;
+}
+
+.social-media-icon {
+    display: inline-block;
+}
+
+.social-media-icon img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
