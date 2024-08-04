@@ -50,3 +50,16 @@
     color: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
+
+.journey-title-container {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.journey-title {
+    font-size: 25px;
+}
+
+.timeline-content-container {
+    padding-top: 30px;
+}

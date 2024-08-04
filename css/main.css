@@ -1,6 +1,7 @@
 @import url(reset.css);
-
 @import url(utilities.css);
+
+@import url(timeline.css);
 
 @import url(navbar.css);
 @import url(footer.css);

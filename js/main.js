@@ -4,6 +4,7 @@ main();
  * A main function that lists all the necessary functions that needs to run when loading the page.
  */
 function main() {
+    calculateTotalYearInDevelopment();
     setCurrentYearInCopyrightElm();
     setCurrentVersionNumber();
 }
@@ -32,4 +33,35 @@ function setCurrentVersionNumber() {
                 error
             )
         );
+}
+
+/**
+ * Calculates and sets the total year in development.
+ */
+function calculateTotalYearInDevelopment() {
+    // Total Year in development
+    const totalDevelopmentYearElement = document.getElementById(
+        'totalDevelopmentInYear'
+    );
+
+    const startDate = new Date('August 23, 2021');
+    const currentDate = new Date();
+
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+    let months = currentDate.getMonth() - startDate.getMonth();
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    let totalYearInDevelopement;
+
+    if (months) {
+        totalYearInDevelopement = `(${years} years ${months} months)`;
+    } else {
+        totalYearInDevelopement = `(${years} years)`;
+    }
+
+    totalDevelopmentYearElement.textContent = totalYearInDevelopement;
 }
