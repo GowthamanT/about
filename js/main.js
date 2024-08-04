@@ -50,6 +50,10 @@ function calculateTotalYearInDevelopment() {
         'totalDevelopmentInYear'
     );
 
+    if (!totalDevelopmentYearElement) {
+        return;
+    }
+
     const startDate = new Date('August 23, 2021');
     const currentDate = new Date();
 
