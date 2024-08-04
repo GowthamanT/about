@@ -28,7 +28,7 @@ function setCurrentVersionNumber() {
     fetch('package.json')
         .then((response) => response.json())
         .then((data) => {
-            const versionElement = document.getElementById('copyrightYear');
+            const versionElement = document.getElementById('version');
             if (versionElement) {
                 versionElement.innerText = data.version;
             }
