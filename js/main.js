@@ -15,7 +15,10 @@ function main() {
 function setCurrentYearInCopyrightElm() {
     const copyrightYearElement = document.getElementById('copyrightYear');
     const currentYear = new Date().getFullYear();
-    copyrightYearElement.textContent = currentYear;
+
+    if (copyrightYearElement) {
+        copyrightYearElement.textContent = currentYear;
+    }
 }
 
 /**
@@ -25,7 +28,10 @@ function setCurrentVersionNumber() {
     fetch('package.json')
         .then((response) => response.json())
         .then((data) => {
-            document.getElementById('version').innerText = data.version;
+            const versionElement = document.getElementById('copyrightYear');
+            if (versionElement) {
+                versionElement.innerText = data.version;
+            }
         })
         .catch((error) =>
             console.error(
