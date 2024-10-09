@@ -12,6 +12,8 @@ header {
     height: 50px;
     line-height: 50px;
     padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -25,15 +27,24 @@ header {
     text-decoration: none;
 }
 
-.social-icons {
-    float: right;
-}
-
-.social-media-icon {
+.header-links-container {
     display: inline-block;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: 15px;
 }
 
-.social-media-icon img {
-    vertical-align: middle;
-    margin-left: 10px;
+.header-link {
+    line-height: initial;
+}
+
+.header-link:hover {
+    border-bottom: 1px solid #ff6b6b;
+}
+
+@media (max-width: 767.98px) {
+    .header-links-container {
+        gap: 15px;
+    }
 }

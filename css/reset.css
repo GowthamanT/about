@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: black;
+    text-decoration: none;
 }
 
 a:hover {
@@ -27,10 +32,4 @@ ul {
 
 h2 {
     font-size: 20px;
-}
-
-.clearfix::after {
-    content: '';
-    clear: both;
-    display: table;
 }
