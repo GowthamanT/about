@@ -85,3 +85,24 @@
 .social-media-icon img {
     vertical-align: middle;
 }
+
+.tags-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tags {
+    border: 1px solid grey;
+    padding: 5px 10px;
+    display: inline-block;
+    line-height: 14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.tags:hover {
+    border-color: #ff6b6b;
+    cursor: default;
+}
