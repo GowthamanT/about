@@ -45,11 +45,6 @@
     max-width: 100%;
 }
 
-.sub-title {
-    color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-}
-
 .journey-title {
     font-size: 25px;
 }
@@ -63,23 +58,15 @@
     padding-top: 50px;
 }
 
-.contact-container {
-    padding: 100px 0 50px;
-}
-
 .social-icons {
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-top: 20px;
 }
 
-.social-media-icon {
-    display: inline-block;
-}
-
-.social-media-icon img {
-    vertical-align: middle;
+.social-media-icon i {
+    font-size: 20px;
+    color: #28282b;
 }
 
 .tags-container {
@@ -99,7 +86,9 @@
 }
 
 .tags:hover {
-    border-color: #ff6b6b;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-color: white;
     cursor: default;
 }
 
