@@ -57,3 +57,7 @@
         text-align: initial;
     }
 }
+
+.text-center {
+    text-align: center;
+}
