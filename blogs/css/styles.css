@@ -1,10 +1,10 @@
-@import url(/css/main.css);
+@import url(/css/styles.css);
 
 .cover-img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 40vh;
 }
 
 @media (max-width: 767.98px) {
@@ -14,7 +14,7 @@
 }
 
 .blog-1 {
-    background-image: url('../assets/journey-towards-consistency/cover-background-image.jpg');
+    background-image: url('../assets/images/blog-1-banner.jpg');
 }
 
 .content {
@@ -42,6 +42,21 @@
 
 .article-content {
     background-color: white;
+    margin-top: 30px;
+}
+
+.article-image {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.article-link {
+    color: #0d92f4;
+}
+
+.article-link:hover {
+    color: #0d92f4;
+    text-decoration: underline;
 }
 
 .creation-info {
