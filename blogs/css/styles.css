@@ -79,3 +79,11 @@
     font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.social-icons {
+    margin-top: 0;
+}
+
+.social-media-icon i {
+    vertical-align: middle;
+}
