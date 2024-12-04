@@ -40,7 +40,7 @@ header {
 }
 
 .header-link:hover {
-    border-bottom: 1px solid #ff6b6b;
+    border-bottom: 1px solid var(--theme-color);
 }
 
 @media (max-width: 767.98px) {
