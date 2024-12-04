@@ -44,7 +44,7 @@
 
 .about-container {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 #about {
@@ -59,10 +59,7 @@
     font-size: 25px;
 }
 
-.timeline-container {
-    padding-top: 30px;
-}
-
+.timeline-container,
 .books-container,
 .blogs-container {
     padding-top: 60px;
@@ -91,10 +88,6 @@
 
     .social-media-icon i {
         font-size: 22px;
-    }
-
-    .about-container {
-        margin-top: 20px;
     }
 }
 
