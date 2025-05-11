@@ -1,6 +1,6 @@
 # Gowthaman T's personal portfolio
 
-This [portfolio](https://gowthamant.in/) captures Little things about me.
+This [portfolio](https://gowthamant.github.io/about/) captures Little things about me.
 
 ## TL;DR
 
@@ -20,7 +20,7 @@ This portfolio website is built with minimal tech stack. No fancy things - Basic
 ## Contributing
 
 As this is my personal website. I would love to create/update on my own. But if you wish to contribute, you can always point me any errors, bugs, any enhancements,
-or things you want to know more about me. Please feel free to email me. My socials are available on my [portfolio](https://gowthamant.in/).
+or things you want to know more about me. Please feel free to email me. My socials are available on my [portfolio](https://gowthamant.github.io/about/).
 
 ## License
 

@@ -4,13 +4,13 @@
     "description": "Know about Gowthaman Thirunavukkarasu.",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/GowthamanT/gowthamant.in.git"
+        "url": "git+https://github.com/GowthamanT/about.git"
     },
-    "author": "Gowthaman Thirunavukkarasu <happygowthaman@gmail.com> (https://gowthamant.in/)",
+    "author": "Gowthaman Thirunavukkarasu <happygowthaman@gmail.com> (https://gowthamant.github.io/about/)",
     "license": "UNLICENSED",
     "bugs": {
-        "url": "https://github.com/GowthamanT/gowthamant.in/issues"
+        "url": "https://github.com/GowthamanT/about/issues"
     },
-    "homepage": "https://github.com/GowthamanT/gowthamant.in#readme",
+    "homepage": "https://github.com/GowthamanT/about#readme",
     "private": true
 }
