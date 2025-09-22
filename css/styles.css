@@ -507,3 +507,50 @@
         height: 150px;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .main-context {
+        line-height: 42px;
+        font-size: 32px;
+        letter-spacing: -2px;
+    }
+
+    .main-context figure {
+        width: unset;
+        height: unset;
+        transform: translate(5px, 10px);
+    }
+
+    .main-context figure img {
+        border-radius: 12px;
+        width: 50px;
+        height: 54px;
+    }
+
+    .main-context figure.chennai {
+        transform: translate(4px, 6px);
+    }
+
+    .main-context figure.chennai img {
+        height: 34px;
+    }
+
+    .hello-computer {
+        height: 32px;
+        transform: translate(0, 3px);
+    }
+
+    .sub-context {
+        text-align: center;
+        font-size: 14px;
+        margin: 24px;
+    }
+
+    .card {
+        margin-top: 16px;
+    }
+
+    .card-content .social-icons {
+        margin-top: 8px;
+    }
+}
