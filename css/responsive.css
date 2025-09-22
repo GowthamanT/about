@@ -1,0 +1,91 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .main-context {
+        line-height: 4rem;
+        font-size: 3rem;
+        letter-spacing: -0.2rem;
+    }
+
+    .main-context figure {
+        transform: translate(10px, 15px);
+    }
+
+    .main-context p br {
+        display: none;
+    }
+
+    .main-context figure img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .main-context figure.chennai {
+        transform: translate(0, 15px);
+    }
+
+    .main-context figure.chennai img {
+        transform: translate(5px, -7px);
+        height: 3rem;
+    }
+
+    .hello-computer {
+        height: 3rem;
+        transform: translate(3px, 3px);
+    }
+
+    .sub-context {
+        font-size: 16px;
+    }
+
+    .sub-context br {
+        display: initial;
+    }
+
+    .cdp-timeline {
+        width: 85%;
+    }
+
+    .blog-post-container img {
+        height: 200px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+} */
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-context figure img {
+        object-fit: cover;
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .main-context {
+        line-height: 5.5rem;
+        font-size: 4.5rem;
+        letter-spacing: -0.3rem;
+    }
+
+    .main-context figure img {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    .main-context figure.chennai img {
+        height: 4rem;
+    }
+
+    .hello-computer {
+        height: 4.5rem;
+    }
+
+    .sub-context {
+        font-size: 18px;
+        margin: 3rem;
+    }
+}
