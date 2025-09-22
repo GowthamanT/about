@@ -11,7 +11,7 @@ header {
     z-index: 10;
     height: 50px;
     line-height: 50px;
-    padding: 0px 10px;
+    padding: 0px 16px;
     display: flex;
     justify-content: space-between;
 }
@@ -30,9 +30,19 @@ header {
 .header-links-container {
     display: inline-block;
     display: flex;
-    gap: 25px;
+    gap: 16px;
     align-items: center;
-    margin-right: 15px;
+}
+
+.separator {
+    width: 2px;
+    background: #d3d3d3;
+    border-radius: 5px;
+    height: 24px;
+}
+
+.social-media-icon {
+    display: inline-flex;
 }
 
 .header-link {

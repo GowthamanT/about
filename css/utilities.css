@@ -48,7 +48,7 @@
     max-width: 1040px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0px 20px;
+    padding: 0px 16px;
     text-align: justify;
 }
 
@@ -60,4 +60,8 @@
 
 .text-center {
     text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
 }
